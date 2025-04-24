@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/images/tab-icon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Luis Hong - Dev</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Quicksand:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+        />
+        <script
+            src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"
+            defer
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+        <!-- <script src="/sketch.js"></script> -->
+        <script src="/sketch.js"></script>
+        <script src="/Cell.js"></script>
+        <script src="/Tile.js"></script>
+    </head>
+    <header class="primary-header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <button
+                    id="animBtn"
+                    class="button | display-sm-none display-md-inline-flex"
+                >
+                    <span class="play-pause-container">
+                        <p class="p-text">Redraw</p>
+                    </span>
+                </button>
+                <button
+                    class="mobile-nav-toggle"
+                    aria-controls="primary-navigation"
+                    aria-expanded="false"
+                >
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <nav class="primary-navigation" id="primary-navigation">
+                    <ul aria-label="Primary" role="list" class="nav-list">
+                        <li>
+                            <a href="#projects"
+                                ><img
+                                    class="social-icon"
+                                    src="images/projects.svg"
+                                    alt="projects"
+                                />Projects</a
+                            >
+                        </li>
+                        <li>
+                            <a href="mailto:luishong50@gmail.com"
+                                ><img
+                                    class="social-icon"
+                                    src="images/contact.svg"
+                                    alt="email"
+                                />Contact</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/luis-hong-dev/"
+                                ><img
+                                    class="social-icon"
+                                    src="images/linkedin.svg"
+                                    alt="lki"
+                                />LinkedIn</a
+                            >
+                        </li>
+                        <!-- <li>
+                            <a href="#"
+                                ><img
+                                    class="social-icon"
+                                    src="images/github.svg"
+                                    alt="yt"
+                                />GitHub</a
+                            >
+                        </li> -->
+                        <li id="extra">
+                            <a href="#"
+                                
+                                ><img
+                                    class="social-icon"
+                                    src="images/extra.svg"
+                                    alt="extra"
+                                />Extra</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero | text-center-sm-only padding-block-900">
+            <div class="container">
+                <div class="even-columns">
+                    <div class="flow description">
+                        <div class="card">
+                            <div>
+                                <h1 class="fs-primary-heading fw-bold">
+                                    Hello, there. I am Luis.
+                                </h1>
+                                <p class="about-description">
+                                    I am web developer, mechanical engineer, and
+                                    fellow human being*. I like to take a creative approach to UI, and
+                                    all sorts of visualizations involving code,
+                                    math, and art, and see what interesting combinations
+                                    can come from that.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <div class="weird-grid">
+                            <div class="react flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front react-icon">
+                                        <div class="test-icon"></div>
+                                    </div>
+                                    <div class="flip-card-back react-name">
+                                        React
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-stack">My Stack</div>
+
+                            <div class="js flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front js-icon">
+                                        <div class="test-icon"></div>
+                                    </div>
+                                    <div class="flip-card-back js-name">
+                                        Javascript
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ts flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front ts-icon">
+                                        <div class="test-icon"></div>
+                                    </div>
+                                    <div class="flip-card-back ts-name">
+                                        Typescript
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ror flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front ror-icon">
+                                        <div class="test-icon"></div>
+                                    </div>
+                                    <div class="flip-card-back ror-name">
+                                        Ruby on Rails
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="node flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front node-icon">
+                                        <div class="test-icon"></div>
+                                    </div>
+                                    <div class="flip-card-back node-name">
+                                        NodeJS
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="css flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front css-icon">
+                                        <div class="test-icon"></div>
+                                    </div>
+                                    <div class="flip-card-back css-name">
+                                        CSS
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="html flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front html-icon">
+                                        <div class="test-icon"></div>
+                                    </div>
+                                    <div class="flip-card-back html-name">
+                                        HTML
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ang flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front ang-icon">
+                                        <div class="test-icon"></div>
+                                    </div>
+                                    <div class="flip-card-back ang-name">
+                                        Angular
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sql flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front sql-icon">
+                                        <div class="test-icon"></div>
+                                    </div>
+                                    <div class="flip-card-back sql-name">
+                                        SQL
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="aws flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front aws-icon">
+                                        <div class="test-icon"></div>
+                                    </div>
+                                    <div class="flip-card-back aws-name">
+                                        Cloud Practioner
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sales-points | padding-block-700" id="projects">
+            <div class="container">
+                <div class="even-columns">
+                    <div>
+                        <div class="project-card">
+                            <img class="p-image" src="images/attractors.png" />
+                            <div class="project-info">
+                                <a
+                                    href="https://luishong07.github.io/Chaotic-Attractors/"
+                                    target="_"
+                                >
+                                    <h2>Chaotic Attractor Visualizer</h2>
+                                </a>
+                                <p class="project-desc">
+                                    A tool to visualize chaotic attractors, and
+                                    the mathematics that generates them in which
+                                    parameters can be changed, altering their
+                                    form and behavior blending art, programming
+                                    and math.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div class="project-card">
+                            <img class="p-image" src="images/enigma.png" />
+
+                            <div class="project-info">
+                                <a
+                                    href="https://luishong07.github.io/Enigma-Replica/"
+                                    target="_blank"
+                                > 
+                                    <h2>Enigma Machine Replica</h2>
+                                </a>
+                                <p class="project-desc">
+                                    As a tribute to Alan Turing, and combining
+                                    the past and present I decided to recreate
+                                    the machine that let him to work on what one
+                                    day would become effectively computer
+                                    science.
+                                </p>
+                            </div>
+                        </div> -->
+                        <div class="project-card">
+                            <img class="p-image" src="images/ivyweek.png" />
+
+                            <div class="project-info">
+                                <a href="https://luishong07.github.io/ivyweek/" target="_blank">
+                                    <h2>IvyWeek Task Organizer</h2>
+                                </a>
+                                <p class="project-desc">
+                                    Inspired by the Ivy Lee method mentioned by
+                                    Atomic Habits' author, James Clear. The
+                                    project exercises the method; only work on
+                                    six important tasks for the day. Plus a few
+                                    extra modifications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer
+        class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100"
+    >
+        <div class="container">
+            <div class="primary-footer__wrapper">
+                <ul class="social-list" role="list" aria-label="social links">
+                    <li>
+                        <a aria-label="github" href="#"
+                            ><img
+                                class="social-icon"
+                                src="images/github.svg"
+                                alt="yt"
+                        /></a>
+                    </li>
+                    <li>
+                        <a aria-label="linkedin" href="#"
+                            ><img
+                                class="social-icon"
+                                src="images/linkedin.svg"
+                                alt="lki"
+                        /></a>
+                    </li>
+                    <li>
+                        <a aria-label="email" href="mailto:someone@example.com"
+                            ><img
+                                class="social-icon"
+                                src="images/contact.svg"
+                                alt="email"
+                        /></a>
+                    </li>
+                </ul>
+
+                <p class="primary-footer__copyright">© 2025 Luis Hong</p>
+            </div>
+        </div>
+    </footer>
+    <section class="modal hidden">
+        <div class="flex">
+            <h1>Hello there,</h1>
+            <button class="btn-close">⨉</button>
+        </div>
+        <div>
+            <h3>Thank you for stopping by.</h3>
+            <p>
+                Here is my resume. 
+            </p>
+        </div>
+        <a class="resume-download" href="Luis Hong Resume.pdf" download>
+            <button class="modal-btn">Resume</button>
+        </a>
+    </section>
+
+    <div class="overlay hidden"></div>
+    <body>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
